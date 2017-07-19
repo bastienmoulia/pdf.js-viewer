@@ -14218,7 +14218,7 @@ function webViewerKeyDown(evt) {
     PDFViewerApplication.secondaryToolbar.close();
     handled = true;
    }
-   if (!PDFViewerApplication.supportsIntegratedFind && PDFViewerApplication.findBar.opened) {
+   if (!PDFViewerApplication.supportsIntegratedFind && PDFViewerApplication.findBar && PDFViewerApplication.findBar.opened) {
     PDFViewerApplication.findBar.close();
     handled = true;
    }
